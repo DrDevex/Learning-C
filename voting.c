@@ -4,8 +4,12 @@ int main()
 {
 	int prompt, age;
 	
-	printf("Enter Your age: ");
-	scanf("%d", &age);
+	do
+	{
+		printf("Enter Your age: ");
+        	scanf("%d", &age);
+	}
+	while(age <= 0)
 
 	if (age < 18)
 	{
