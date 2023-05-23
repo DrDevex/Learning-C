@@ -16,7 +16,7 @@ int main(void)
 
 	Calculation = add(number1, number2);
 
-	printf("The Sum of the numbers is: %i", Calculation);
+	printf("The Sum of the numbers is: %i\n", Calculation);
 }
 
 

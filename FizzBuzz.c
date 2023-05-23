@@ -2,18 +2,39 @@
 
 int main(void)
 {
-	int number = 100;
+	int start, end;
 
-	for (i = 0; i <= number; i++)
+	do
 	{
-		if (i % 3 == 0)
+		printf("Enter The number to start from: ");
+		scanf("%d", &start);
+
+		printf("Enter The number to end at: ");
+		scanf("%d", &end);
+
+	}
+	while ( (start <= 0) || (end <= 0) );
+
+	while (start <= end)
+	{
+		if ( (start % 5 == 0) && (start % 3 == 0) )
+                {
+                        printf("FizzBuzz\n");
+                }
+		else if (start % 5 == 0)
 		{
-			printf("Fizz");
+			printf("Buzz\n");
 		}
-		else if (i % 5 == 0)
+		else if (start % 3 == 0)
+                {
+                        printf("Fizz\n");
+                }
+		else
 		{
-			printf("Buzz");
+			printf("%d\n", start);
 		}
+
+		start++;
 
 	}
 	
