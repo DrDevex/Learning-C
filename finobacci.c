@@ -7,14 +7,14 @@
 
 int main(void)
 {
-	int number = 100;
+	int firstNum = 0;
+	int secondNum = 1;
 
-	for (int i = 0; i < number; i++)
+	for (int thirdNum = 0; thirdNum <= 100; thirdNum++)
 	{
-		i = i + 1;
-		
-		printf("%d\n", i);
-	}
+		thirdNum = thirdNum - firstNum + thirdNum - secondNum;
 
+		printf("%d\n", thirdNum);
+	}
 	return 0;
 }
